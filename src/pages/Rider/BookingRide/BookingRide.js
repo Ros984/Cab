@@ -47,7 +47,6 @@ const BookingRide = () => {
   // Location Suggestions
   const [pickupSuggestions, setPickupSuggestions] = useState([]);
   const [dropSuggestions, setDropSuggestions] = useState([]);
-  const [isDropFocused, setIsDropFocused] = useState(false);
   const [typingTimeout, setTypingTimeout] = useState(null);
 
   // Prevent scrolling when modals are open
@@ -80,7 +79,7 @@ const BookingRide = () => {
 
     setTypingTimeout(timeout);
     return () => clearTimeout(timeout);
-  }, [pickupAddress, dropAddress, pickupLocation, dropLocation]);
+  }, [pickupAddress, dropAddress, pickupLocation, dropLocation, typingTimeout]);
 
   // Handle selecting a pickup suggestion
   const handleSelectPickupSuggestion = (suggestion) => {

@@ -1,9 +1,7 @@
-import React, { useState, useCallback } from "react";
-import { useLocation } from "react-router-dom";
+import React, { useState } from "react";
 import ActiveRides from "../ActiveRides/ActiveRides";
 import HistoryRides from "../RideHistory/RideHistory";
 import "./RideDashboard.css";
-import BookingRide from "../BookingRide/BookingRide";
 import RiderSidebar from "../RideSidbar/RiderSidebar";
 
 const RiderDashboard = () => {
