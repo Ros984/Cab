@@ -3,7 +3,6 @@ import "./BookingRide.css";
 import { useNavigate } from "react-router-dom";
 import { getTokenFromCookie } from "../../../utils/tokenUtils";
 import { requestRide, getRideRequestStatus } from "../../../api/riderApi";
-import { reverseGeocode } from "../../../api/locationApi";
 import RideMap from "../../../components/Map/RideMap";
 import FindDriverModal from "../../../Modal/FindDriverModal";
 import SelectVehicle from "../../../Modal/SelectVehicle";
@@ -44,7 +43,6 @@ const BookingRide = () => {
   // Modal states
   const [isSelectingVehicle, setIsSelectingVehicle] = useState(false);
   const [isFindingDriver, setIsFindingDriver] = useState(false);
-  const [selectedVehicle, setSelectedVehicle] = useState(null);
 
   // Location Suggestions
   const [pickupSuggestions, setPickupSuggestions] = useState([]);
@@ -142,7 +140,6 @@ const BookingRide = () => {
 
   // Handle proceeding with vehicle selection
   const handleProceedWithVehicle = async (vehicle) => {
-    setSelectedVehicle(vehicle);
     setIsSelectingVehicle(false);
     setIsFindingDriver(true);
 

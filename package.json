@@ -1,5 +1,5 @@
 {
-  "name": "my-uber-app",
+  "name": "veloxo-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,12 +9,12 @@
     "@shadcn/ui": "^0.0.4",
     "cra-template": "1.2.0",
     "leaflet": "^1.9.4",
+    "lucide-react": "latest",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-leaflet": "^5.0.0",
     "react-router-dom": "^7.1.1",
-    "react-scripts": "5.0.1",
-    "lucide-react": "latest"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -39,5 +39,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
+    "autoprefixer": "^10.4.21"
   }
 }

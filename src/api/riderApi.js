@@ -90,7 +90,7 @@ export const getWalletTransactionHistory = () => {
 };
 
 // ✅ Export all API functions safely
-export default {
+const riderApiExports = {
   requestRide,
   cancelRideRequest,
   rateDriver,
@@ -104,3 +104,5 @@ export default {
   addWalletBalance, // ✅ Added
   getWalletTransactionHistory, // ✅ Added
 };
+
+export default riderApiExports;

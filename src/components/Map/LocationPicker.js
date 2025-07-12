@@ -1,7 +1,7 @@
 import { useMapEvents } from "react-leaflet";
 
 const LocationPicker = ({ onLocationSelect }) => {
-  const mapEvents = useMapEvents({
+  useMapEvents({
     click: (e) => {
       const { lat, lng } = e.latlng;
       onLocationSelect([lng, lat]);

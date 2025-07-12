@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import DriverNavBar from "../DriverNavBar/DriverNavBar";
 import "./DriverDashboard.css"; // Import the new CSS file
 import DriverSidebar from "../DriverSideBar/DriverSidebar";

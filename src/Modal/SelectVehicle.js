@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./SelectVehicle.css";
 import { cancelRideRequest } from "../api/riderApi";
 
